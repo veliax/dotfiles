@@ -1,5 +1,4 @@
 require("anon.config.remap")
-require("anon.config.lazy")
 require("anon.config.set")
+require("anon.config.lazy")
 
-require("lazy").setup("plugins")

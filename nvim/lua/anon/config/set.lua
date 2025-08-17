@@ -9,12 +9,10 @@ vim.opt.incsearch = true
 
 vim.opt.scrolloff = 9
 
-
 vim.opt.shiftwidth = 4
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.incsearch = true
 vim.opt.termguicolors = true
 vim.opt.smartindent = true
 
-
+vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 
