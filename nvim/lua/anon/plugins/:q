@@ -1,0 +1,20 @@
+return {
+    'projekt0n/github-nvim-theme',
+    name = 'github-theme',
+    lazy = false, 
+    priority = 1000, 
+    config = function()
+
+	require('github-theme').setup({
+	    specs = {
+		github_dark= {
+		    inactive = '#090909', 
+		    bg1 = '#000000'
+		},
+	    },
+	})
+	vim.cmd('colorscheme github_dark')
+	vim.api.nvim_set_hl(0, "StatusLine", { bg = "none" })
+	vim.api.nvim_set_hl(0, "StatusLineNC", { bg = "none" })
+    end,
+}
